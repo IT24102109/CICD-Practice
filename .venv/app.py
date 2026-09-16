@@ -21,7 +21,7 @@ def create_profile_message(username, role="student"):
   if role not in allowed_roles:
    raise ValueError("Invalid role")
 
-  return f"User: {username.strip()} | Role: {role}"
+  return True
 
 if __name__ == "__main__":
  print(create_profile_message("student_01"))
